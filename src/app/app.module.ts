@@ -4,13 +4,19 @@ import { AppComponent } from './app.component';
 import { BlueColorDirective } from './blue-color.directive';
 import { HttpClientModule } from '@angular/common/http'
 import { EmployeeService } from './employee.service'
-import { EmployeeDetailComponent } from './employee-detail.component'
+import { EmployeeDetailComponent } from './employee-detail.component';
+import { HomeComponent } from './home/home.component';
+import { EmpComponent } from './emp/emp.component';
+import { Emp1Component } from './emp1.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     BlueColorDirective,
-    EmployeeDetailComponent
+    EmployeeDetailComponent,
+    HomeComponent,
+    EmpComponent,
+    Emp1Component
   ],
   imports: [
     BrowserModule,

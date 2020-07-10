@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  visible = false;
+  counter = 0;
+  myFavLang = {
+    // 'frontend':['html', 'css', 'js'],
+    'backend':['nodejs','php', 'python', 'ruby']
+  }
+
+  toggleDiv(){
+    // this.visible = !this.visible;
+    this.counter++;
+  }
 }
