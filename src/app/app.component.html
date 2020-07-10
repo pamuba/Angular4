@@ -1,15 +1,27 @@
-<div style="text-align:center;">
+<!-- <div style="text-align:center;">
   <h1 blueColored>Hello World</h1>
-  <!-- <employee-detail></employee-detail> -->
+  <employee-detail></employee-detail>
 
-  <!-- <div *ngIf="visible; then evenClicked else oddClicked">This Works</div> -->
+  <div *ngIf="visible; then evenClicked else oddClicked">This Works</div>
 
   <div *ngIf="myFavLang.frontend; let randomVariable">This Works {{randomVariable}}</div>
   <button (click)="toggleDiv()">Toggle</button>
 
 
   <ng-template #oddClicked>Odd Number of Clicks</ng-template>
-  <ng-template #evenClicked>Even Number of Clicks</ng-template>
+  <ng-template #evenClicked>Even Number of Clicks</ng-template> 
 
+  Hello:{{username}}
+  <input type="text" [value]="username" (input)="changeUserName($event)"> 
+  <input type="text" [(ngModel)]="username">
   
+</div> -->
+
+
+<div if="fullPage">
+  <app-header></app-header>
+
+  <app-login-form></app-login-form>
+
+  <app-footer></app-footer>
 </div>

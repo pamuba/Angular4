@@ -8,6 +8,10 @@ import { EmployeeDetailComponent } from './employee-detail.component';
 import { HomeComponent } from './home/home.component';
 import { EmpComponent } from './emp/emp.component';
 import { Emp1Component } from './emp1.component'
+import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import { LoginFormComponent } from './login-form/login-form.component';
+import { FooterComponent } from './footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -16,11 +20,15 @@ import { Emp1Component } from './emp1.component'
     EmployeeDetailComponent,
     HomeComponent,
     EmpComponent,
-    Emp1Component
+    Emp1Component,
+    HeaderComponent,
+    LoginFormComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers:[EmployeeService],
   bootstrap: [AppComponent]
